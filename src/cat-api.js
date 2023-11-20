@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Notiflix from 'notiflix';
 
 axios.defaults.headers.common['x-api-key'] =
   'live_TBleJNtObZPhYkV0D4IfnkiYHi4zUc7B01H0QDLeMYwiEN6kfBHltsw1G8mrEhjU';

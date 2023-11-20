@@ -1,3 +1,26 @@
+* {
+  background-color: pink;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.cat-info {
+  display: flex;
+}
+
+.cat-info img {
+  max-width: 25%;
+  float: left; /* Alinierea imaginii la stânga */
+  margin-right: 20px; /* Spațiul între imagine și text */
+  margin-left: 100px;
+}
+.cat-info p {
+  margin-right: 300px;
+}
+
 .breed-select {
-  width: 700px;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

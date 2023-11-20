@@ -6,8 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const error = document.querySelector('.error');
   const catInfo = document.querySelector('.cat-info');
 
-  breedSelect.style.width = '200px';
-
   loader.style.display = 'none';
   error.style.display = 'none';
 
@@ -15,7 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(breeds => {
       loader.style.display = 'none';
       breeds.forEach(breed => {
+        //se psrcurge fiecare element din lsita de rase de pisici
+        //Pentru fiecare rasă, se creează un element option care va fi adăugat în breedSelect (selectorul de rase).
         const option = document.createElement('option');
+        //informatiile despre pisici
         option.value = breed.id;
         option.text = breed.name;
         breedSelect.appendChild(option);
